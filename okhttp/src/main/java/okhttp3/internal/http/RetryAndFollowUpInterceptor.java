@@ -62,7 +62,7 @@ public final class RetryAndFollowUpInterceptor implements Interceptor {
    * How many redirects and auth challenges should we attempt? Chrome follows 21 redirects; Firefox,
    * curl, and wget follow 20; Safari follows 16; and HTTP/1.0 recommends 5.
    */
-  private static final int MAX_FOLLOW_UPS = 20;
+  private static final int MAX_FOLLOW_UPS = 100;
 
   private final OkHttpClient client;
   private final boolean forWebSocket;
